@@ -1,0 +1,14 @@
+body {
+	font-family: verdana, sans-serif;
+	color: #000;
+	margin: 20px;
+	font-size: 20pt;
+}
+.textbox {
+	padding: 10px;
+	font-size: 20pt;
+}
+.item {
+	cursor: pointer;
+	user-select: none;
+}

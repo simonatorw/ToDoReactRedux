@@ -10,7 +10,9 @@ const store = createStore(toDoReducer);
 
 render(
 	<Provider store={store}>
-		<ToDo />
+		<div className="container">
+			<ToDo />
+		</div>
 	</Provider>,
 	document.getElementById('app')
 );

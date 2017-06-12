@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 
 import { addToDo, removeToDo } from '../../actions/action-creators';
 import ToDoTpl from './ToDoTpl';
+import './ToDo.less';
 
 function mapStateToProps(store) {
 	return {

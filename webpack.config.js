@@ -44,7 +44,7 @@ module.exports = {
 				include: APP
 			},
 			{
-				test: /\.css$/,
+				test: [/\.css$/, /\.less$/],
 				loaders: [
 					'style-loader', 
 					{ loader: 'css-loader', options: { importLoaders: 1 } }, 

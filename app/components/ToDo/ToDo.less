@@ -1,0 +1,35 @@
+$container-bg-color: #ccc;
+$item-bg-color: orange;
+
+body {
+	font-family: verdana, sans-serif;
+	color: #000;
+	margin: 20px;
+	font-size: 20pt;
+
+	.container {
+		display: flex;
+		background-color: $container-bg-color;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 20px 0;
+		
+		.item {
+			margin: auto;
+			padding: 20px;
+			background-color: $item-bg-color;
+			min-width: 100px;
+			width: auto;
+			
+			.textbox {
+				padding: 10px;
+				font-size: 20pt;
+			}
+			.listItem {
+				cursor: pointer;
+				user-select: none;
+			}
+		}
+	}
+
+}

@@ -8,7 +8,7 @@ export default function ToDoTpl({ add, remove, list }) {
 					placeholder="Enter an item" 
 					onKeyUp={ add } />
 			</section>
-			<section>
+			<section className="list">
 				<ul>
 					{
 						list.map((item, i) => {

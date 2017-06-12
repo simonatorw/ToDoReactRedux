@@ -11,7 +11,6 @@ const path = require('path');
 //postcss support
 const postcssImport = require('postcss-easy-import');
 const precss = require('precss');
-const autoprefixer = require('autoprefixer');
 
 //constants
 const APP = path.join(__dirname, 'app');

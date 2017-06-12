@@ -1,5 +1,6 @@
 $container-bg-color: #ccc;
 $item-bg-color: orange;
+$list-bg-color: #fff;
 
 body {
 	font-family: verdana, sans-serif;
@@ -25,9 +26,18 @@ body {
 				padding: 10px;
 				font-size: 20pt;
 			}
-			.listItem {
-				cursor: pointer;
-				user-select: none;
+			
+			.list {
+				padding: 10px  0;
+				border-left: 1px solid #aaa;
+				border-right: 1px solid #aaa;
+				border-bottom: 1px solid #aaa;
+				background-color: $list-bg-color;
+				
+				.listItem {
+					cursor: pointer;
+					user-select: none;
+				}				
 			}
 		}
 	}

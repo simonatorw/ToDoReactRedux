@@ -40,7 +40,7 @@
     "json-loader": "^0.5.4",
     "normalize.css": "^7.0.0",
     "postcss-cssnext": "^2.11.0",
-    "postcss-easy-import": "^2.1.0",
+    "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.5",
     "precss": "^1.4.0",
     "style-loader": "^0.18.2",

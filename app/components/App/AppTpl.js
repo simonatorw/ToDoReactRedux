@@ -12,7 +12,7 @@ export default function AppTpl(props) {
 			<Nav />
 			<Switch>
 				<Route exact path="/" component={ToDo}/>
-				<Route path="/orange" component={ToDo}/>
+				<Route path="/purple" component={ToDo}/>
 				<Route path="/white" component={About}/>
 			</Switch>
 		</div>

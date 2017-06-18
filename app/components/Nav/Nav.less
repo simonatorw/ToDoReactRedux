@@ -1,3 +1,5 @@
+@import '../Shared/variables.less';
+
 .mainNav {
 	flex: 0 0 220px;
 	overflow-y: auto;
@@ -16,11 +18,11 @@
 				color: #fff;
 				width: 160px;
 				padding: 20px;
-				background-color: orange;
+				background-color: $item-bg-color;
 				transition: background-color 0.8s;
 			
 				&:hover {
-					background-color: color(orange tint(30%));
+					background-color: color($item-bg-color tint(30%));
 				}
 			}
 			&:first-child {

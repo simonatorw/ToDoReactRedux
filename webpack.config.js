@@ -8,10 +8,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
-//postcss support
-const postcssImport = require('postcss-easy-import');
-const precss = require('precss');
-
 //constants
 const APP = path.join(__dirname, 'app');
 const BUILD = path.join(__dirname, 'build');

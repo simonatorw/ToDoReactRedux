@@ -5,7 +5,7 @@ export default function toDoReducer(
 		green: {
 			list: []
 		},
-		orange: {
+		purple: {
 			list: []
 		}
 	}, 

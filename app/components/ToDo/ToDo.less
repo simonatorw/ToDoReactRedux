@@ -1,5 +1,4 @@
-$item-bg-color: orange;
-$list-bg-color: #fff;
+@import '../Shared/variables.less';
 
 .item {
 	margin: auto;
@@ -9,25 +8,25 @@ $list-bg-color: #fff;
 	box-sizing: border-box;
 	flex: 0 0 calc(100% - 260px);
 	margin-left: 20px;
+	transition: background-color 0.8s;
 	
 	.textbox {
 		padding: 10px;
 		font-size: 20pt;
-		width: calc(100% - 22px - 2px);
+		width: calc(100% - 20px);
+		border: 0;
 	}
 	
 	.list {
 		padding: 10px  0;
-		border-left: 1px solid #aaa;
-		border-right: 1px solid #aaa;
-		border-bottom: 1px solid #aaa;
 		background-color: $list-bg-color;
-		height: calc(100% - 75px);
+		height: calc(100% - 71px);
 		overflow-y: auto;
 		
 		.listItem {
 			cursor: pointer;
 			user-select: none;
+			color: $list-text-color;
 		}				
 	}
 }

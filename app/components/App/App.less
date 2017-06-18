@@ -1,7 +1,4 @@
-$container-bg-color: #fff;
-$item-bg-color: orange;
-$list-bg-color: #fff;
-$container-bg-color: #fff;
+@import '../Shared/variables.less';
 
 html {
 	height: 100%;
@@ -14,6 +11,7 @@ html {
 		font-size: 20pt;
 		height: 100%;
 		box-sizing: border-box;
+		background-color: color($app-bg-color tint(30%));
 
 		#app {
 			height: 100%;

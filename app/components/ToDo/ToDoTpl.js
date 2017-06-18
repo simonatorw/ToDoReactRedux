@@ -1,8 +1,10 @@
 import React from 'react';
 
-export default function ToDoTpl({ add, remove, list }) {
+import './ToDo.less';
+
+export default function ToDoTpl({ add, remove, list, bgColor }) {
 	return (
-		<div className="item">
+		<div className="item" style={{ backgroundColor: bgColor }}>
 			<section>
 				<input type="text" className="textbox" 
 					placeholder="Enter an item" 

@@ -1,62 +1,33 @@
-$container-bg-color: #fff;
 $item-bg-color: orange;
 $list-bg-color: #fff;
 
-html {
+.item {
+	margin: auto;
+	padding: 20px;
+	background-color: color($item-bg-color shade(1%));
+	min-width: 100px;
+	max-width: 382px;
+	width: auto;
 	height: 100%;
-
-	body {
-		font-family: verdana, sans-serif;
-		color: #000;
-		padding: 20px;
-		margin: 0;
+	box-sizing: border-box;
+	
+	.textbox {
+		padding: 10px;
 		font-size: 20pt;
-		height: 100%;
-		box-sizing: border-box;
-
-		#app {
-			height: 100%;
-			
-			.container {
-				display: flex;
-				background-color: color($container-bg-color shade(10%));
-				flex-direction: row;
-				flex-wrap: wrap;
-				padding: 20px 0;
-				height: 100%;
-				box-sizing: border-box;
-				
-				.item {
-					margin: auto;
-					padding: 20px;
-					background-color: color($item-bg-color shade(1%));
-					min-width: 100px;
-					max-width: 382px;
-					width: auto;
-					height: 100%;
-					box-sizing: border-box;
-					
-					.textbox {
-						padding: 10px;
-						font-size: 20pt;
-					}
-					
-					.list {
-						padding: 10px  0;
-						border-left: 1px solid #aaa;
-						border-right: 1px solid #aaa;
-						border-bottom: 1px solid #aaa;
-						background-color: $list-bg-color;
-						height: calc(100% - 75px);
-						overflow-y: auto;
-						
-						.listItem {
-							cursor: pointer;
-							user-select: none;
-						}				
-					}
-				}
-			}
-		}
+	}
+	
+	.list {
+		padding: 10px  0;
+		border-left: 1px solid #aaa;
+		border-right: 1px solid #aaa;
+		border-bottom: 1px solid #aaa;
+		background-color: $list-bg-color;
+		height: calc(100% - 75px);
+		overflow-y: auto;
+		
+		.listItem {
+			cursor: pointer;
+			user-select: none;
+		}				
 	}
 }

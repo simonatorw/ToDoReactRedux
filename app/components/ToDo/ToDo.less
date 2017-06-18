@@ -5,15 +5,15 @@ $list-bg-color: #fff;
 	margin: auto;
 	padding: 20px;
 	background-color: color($item-bg-color shade(1%));
-	min-width: 100px;
-	max-width: 382px;
-	width: auto;
 	height: 100%;
 	box-sizing: border-box;
+	flex: 0 0 calc(100% - 260px);
+	margin-left: 20px;
 	
 	.textbox {
 		padding: 10px;
 		font-size: 20pt;
+		width: calc(100% - 22px - 2px);
 	}
 	
 	.list {

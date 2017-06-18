@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 
-import toDoReducer from './reducers/toDoReducer.js';
-import appReducer from './reducers/appReducer.js';
+import toDoReducer from './store/reducers/toDoReducer.js';
+import appReducer from './store/reducers/appReducer.js';
 import App from './components/App/AppTpl';
 
 const reducers = combineReducers({

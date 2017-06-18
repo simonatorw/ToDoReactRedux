@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { setContentBgColor } from '../../actions/action-creators';
+import { setContentBgColor } from '../../store/actions/action-creators';
 import NavTpl from './NavTpl';
 
 function mapDispatchToProps(dispatch, ownProps) {

@@ -28,6 +28,20 @@ html {
 				.appContainer {
 					width: 100%;
 					display: flex;
+					
+					.item {
+						&.error {
+							background-color: blue;
+							color: #fff;
+							font-family: terminal, courier, sans-serif;
+							
+							.title {
+								font-size: 1.6em;
+								font-weight: bold;
+								margin-bottom: 10px;
+							}
+						}
+					}
 				}
 			}
 		}

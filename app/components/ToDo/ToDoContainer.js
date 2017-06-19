@@ -4,6 +4,13 @@ import { addToDo, removeToDo } from '../../store/actions/action-creators';
 import ToDoTpl from './ToDoTpl';
 
 function mapStateToProps(store) {
+	let pathColor = location.href.split('/')[3];
+	
+	if (!pathColor) {
+		pathColor = 'green';
+	}
+	store.appReducer.bgColor = store.appReducer.bgColor || pathColor;
+	
 	return {
 		list: store.toDoReducer[store.appReducer.bgColor].list,
 		bgColor: store.appReducer.bgColor
@@ -14,7 +21,7 @@ function mapDispatchToProps(dispatch, ownProps) {
 	let listType = ownProps.match.path.split('/')[1];
 	if (!listType) {
 		listType = 'green';
-	}	
+	}
 	return {
 		add: function(e) {
 			e.preventDefault();

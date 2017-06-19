@@ -1,14 +1,8 @@
 import ACTIONS from '../actions/action-types';
+import stateTree from '../stateTree';
 
 export default function toDoReducer(
-	state = {
-		green: {
-			list: []
-		},
-		purple: {
-			list: []
-		}
-	}, 
+	state = stateTree, 
 	action
 ) {
 

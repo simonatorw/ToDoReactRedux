@@ -1,6 +1,7 @@
 import ACTIONS from '../actions/action-types';
+import stateTree from '../stateTree';
 
-export default function appReducer(state = { bgColor: '' }, action) {
+export default function appReducer(state = stateTree, action) {
 
 	switch(action.type) {
 

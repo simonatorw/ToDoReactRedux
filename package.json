@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "SET NODE_ENV=development | webpack-dev-server --inline",
     "build": "SET NODE_ENV=production | webpack --config webpack.prod.config.js"
   },
@@ -37,6 +37,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.4",
     "html-webpack-plugin": "^2.28.0",
+    "jest": "^20.0.4",
     "json-loader": "^0.5.4",
     "normalize.css": "^7.0.0",
     "postcss-cssnext": "^2.11.0",
